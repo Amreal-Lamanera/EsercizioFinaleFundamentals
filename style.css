@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.barra-verticale {
+    width: 4vw;
+    line-height: 60px;
+    height: 100vh;
+    text-align: center;
+    background-color: white;
+    position: fixed;
+}
+
+.barra-verticale {
+    color: #333333;
+    font-size: 20px;
+}
+
+.barra-verticale .sidebar {
+    margin: 3vh 0;
+}
+
+.barra-verticale .menu i:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.barra-verticale .sidebar i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.barra-verticale .sidebar i span{
+    font-size: 10px;
+    display: block;
+}
+
+.barra-orizzontale {
+    width: calc(100% - 4vw);
+    height: 4vw;
+    position: relative;
+    left: 4vw;
+    top: 0;
+    background-color: white;
+}
+
+.barra-orizzontale .logo , .barra-orizzontale .searchbar {
+    float: left;
+}
+
+.barra-orizzontale .searchbar{
+    width: 60%;
+    text-align: center;
+}
+
+ header .searchbar .input-group {
+    /* width: auto; */
+    display: inline-block;
+    height: 3vw;
+    margin: 0.5vw 0;
+    /* text-align: center; */
+    color: #333333;
+} 
+
+ header .searchbar .input-group input {
+    height: 100%;
+    width: 40vw;
+    padding: 0 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 0 0 3px;
+}
+
+header .searchbar .input-group div {
+    cursor: pointer;
+    float: right;
+    height: 100%;
+    width: 4vw;
+    line-height: 2vw;
+    border-color: #CCCCCC;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    background: #F8F8F8;
+    border-radius: 0 3px 3px 0;
+}
+
+.barra-orizzontale .logo {
+    height: 4vw;
+    width: 20%;
+}
+
+.barra-orizzontale .logo img{
+    height: 100%;
+}
+
+.container{
+    padding: 4vw;
+    background-color: #F7F7F7;
+    /* background-color: red; */
+    position: absolute;
+    top: 4vw;
+    left: 4vw;
+}
+
+.content .videos {
+    float: left;
+    width: calc(100% / 4 - 6vh);
+    margin: 3vh;
+}
+
+/* .videos a{
+    position: relative;
+} */
+
+.videos a{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.content .video {
+    width: 100%;
+}
+
+.videos a:hover .layover{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.videos a:hover .layover::after{
+    content: '12:13';
+    padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.content .logo {
+    width: 15%;
+    float: left;
+}
+
+.content .videos .description {
+    margin: 2vh 0;
+}
+
+.content .videos .description .txt-desc{
+    float: left;
+    margin-left: 2vh;
+    width: calc(100% - 15% - 2vh);
+}
+
+.content .videos .description .txt-desc h4{
+    margin-bottom: 1vh;
+}
+
+.content .videos .description .txt-desc span{
+    display: block;
+    font-size: 0.8em;
+    color: grey;
+}
