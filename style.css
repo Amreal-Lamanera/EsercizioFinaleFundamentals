@@ -20,11 +20,11 @@
 }
 
 .barra-verticale .sidebar {
-    margin: 3vh 0;
+    margin: 5vh 0;
 }
 
 .barra-verticale .menu i:hover {
-    color: black;
+    color: #999999;
     cursor: pointer;
 }
 
@@ -121,6 +121,25 @@ header .searchbar .input-group div {
     display: block;
 }
 
+.videos .description .title {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 1vh;
+}
+
+.videos .description a {
+    display: block;
+    font-size: 0.8em;
+    color: grey;
+    text-decoration: none;
+}
+
+.videos .description .channel:hover {
+    color: black;
+}
+
 .content .video {
     width: 100%;
 }
@@ -156,14 +175,4 @@ header .searchbar .input-group div {
     float: left;
     margin-left: 2vh;
     width: calc(100% - 15% - 2vh);
-}
-
-.content .videos .description .txt-desc h4{
-    margin-bottom: 1vh;
-}
-
-.content .videos .description .txt-desc span{
-    display: block;
-    font-size: 0.8em;
-    color: grey;
 }
