@@ -7,20 +7,49 @@
 
 .barra-verticale {
     width: 4vw;
-    line-height: 60px;
+    line-height: 80px;
     height: 100vh;
     text-align: center;
     background-color: white;
     position: fixed;
-}
-
-.barra-verticale {
     color: #333333;
     font-size: 20px;
 }
 
-.barra-verticale .sidebar {
-    margin: 5vh 0;
+/* Menù di navigazione */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 0;
+    top: 4vw;
+    left: 0;
+    background-color: rgba(255,255,255, 1);
+    overflow-x: hidden;
+  }
+
+  .overlay-content i {
+    line-height: 80px;
+    }
+
+    .overlay-content i:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+  
+  .overlay i {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333333;
+    display: block;
+  }
+
+/* FINE */
+
+.barra-verticale #navMen {
+    margin: 4vh 0;
 }
 
 .barra-verticale .menu i:hover {
@@ -28,8 +57,8 @@
     cursor: pointer;
 }
 
-.barra-verticale .sidebar i:hover {
-    color: red;
+.barra-verticale .sidebar:hover {
+    background-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -41,10 +70,11 @@
 .barra-orizzontale {
     width: calc(100% - 4vw);
     height: 4vw;
-    position: relative;
+    position: fixed;
     left: 4vw;
     top: 0;
     background-color: white;
+    z-index: -1;
 }
 
 .barra-orizzontale .logo , .barra-orizzontale .searchbar {
@@ -57,11 +87,9 @@
 }
 
  header .searchbar .input-group {
-    /* width: auto; */
     display: inline-block;
     height: 3vw;
     margin: 0.5vw 0;
-    /* text-align: center; */
     color: #333333;
 } 
 
@@ -96,6 +124,7 @@ header .searchbar .input-group div {
 }
 
 .container{
+    z-index: -2;
     padding: 4vw;
     background-color: #F7F7F7;
     /* background-color: red; */
@@ -109,10 +138,6 @@ header .searchbar .input-group div {
     width: calc(100% / 4 - 6vh);
     margin: 3vh;
 }
-
-/* .videos a{
-    position: relative;
-} */
 
 .videos a{
     width: 100%;

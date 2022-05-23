@@ -5,19 +5,34 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
-    <!-- <i class="fas fa-bell"></i>
-    <i class="fas fa-video"></i>
-    <i class="fas fa-bars"></i>
-    <i class="fas fa-home"></i> -->
     <header>
 
         <div class="barra-verticale">
             <div class="menu">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" id="navMen" onclick="Nav()"></i>
             </div>
+
+            <!-- Menù di navigazione -->
+
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <i class="fas fa-home">
+                        <span>Home</span>
+                    </i>
+                    <i class="fas fa-fire">
+                        <span>Tendenze</span>
+                    </i>
+                    <i class="fas fa-folder">
+                        <span>Raccolta</span>
+                    </i>
+                </div>
+            </div>
+            <!-- FINE -->
+
             <div class="sidebar">
                 <i class="fas fa-home">
                     <span>Home</span>
@@ -53,7 +68,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="myContainer">
 
             <section class="content">
 
@@ -177,8 +192,6 @@
                         </div>
                     </div>
                 </div>
-                
-                
                 
             </section>
 
