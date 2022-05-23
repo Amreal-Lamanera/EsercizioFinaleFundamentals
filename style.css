@@ -5,51 +5,52 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.barra-verticale {
-    width: 4vw;
-    line-height: 80px;
-    height: 100vh;
-    text-align: center;
-    background-color: white;
-    position: fixed;
-    color: #333333;
-    font-size: 20px;
-}
-
 /* Menù di navigazione */
 
 .overlay {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 0;
-    top: 4vw;
-    left: 0;
+    /* z-index: 0; */
+    /* top: 4vw; */
+    /* left: 0; */
     background-color: rgba(255,255,255, 1);
     overflow-x: hidden;
-  }
+}
 
-  .overlay-content i {
-    line-height: 80px;
-    }
-
-    .overlay-content i:hover {
-        background-color: rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
+.overlay i:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
   
-  .overlay i {
+.overlay i {
     padding: 8px;
     text-decoration: none;
     font-size: 20px;
-    color: #333333;
+    /* color: #333333; */
     display: block;
-  }
+    border-top: 1px solid #999999;
+}
+
+.overlay span {
+    font-size: 15px;
+}
 
 /* FINE */
 
+.barra-verticale {
+    width: 4vw;
+    height: 100vh;
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    color: #333333;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
 .barra-verticale #navMen {
-    margin: 4vh 0;
+    line-height: 4vw;
 }
 
 .barra-verticale .menu i:hover {
@@ -60,6 +61,11 @@
 .barra-verticale .sidebar:hover {
     background-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+.barra-verticale .sidebar {
+    line-height: 10vh;
+    border-top: 1px solid #999999;
 }
 
 .barra-verticale .sidebar i span{
@@ -106,7 +112,7 @@ header .searchbar .input-group div {
     float: right;
     height: 100%;
     width: 4vw;
-    line-height: 2vw;
+    line-height: 3vw;
     border-color: #CCCCCC;
     border-width: 1px 1px 1px 0;
     border-style: solid;
